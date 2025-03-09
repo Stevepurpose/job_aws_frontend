@@ -5,7 +5,6 @@ import { ACCESS_TOKEN } from "./constants";
 let apiUrl = import.meta.env.VITE_API_URL
 let backendUrl = axios.create({
   baseURL: apiUrl,
-  //withCredentials: true,
 });
 
 backendUrl.interceptors.request.use(
